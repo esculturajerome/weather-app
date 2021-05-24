@@ -7,12 +7,10 @@ import NavBar from "./NavBar";
 
 export default function Search(props) {
   const [query, setQuery] = useState("");
-  const [weather, setWeather] = useState({});
 
   const search = async () => {
     const data = await fetchWeather(query);
     if (data.cod === "200") {
-      setWeather(data);
       setQuery("");
 
       props.history.push({
