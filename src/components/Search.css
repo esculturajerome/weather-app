@@ -1,0 +1,34 @@
+.search {
+  display: flex;
+  justify-content: center;
+}
+
+h2.search__title {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+p.search__subtitle {
+  margin-top: 0;
+  font-size: 0.7rem;
+  font-style: italic;
+}
+
+.search__field {
+  display: flex;
+  align-items: end;
+  margin-top: 4rem;
+}
+
+.search__input {
+  border: none;
+  border-bottom: 1px solid;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  max-width: 250px;
+}
+
+.search__logo {
+  width: 15px;
+  cursor: pointer;
+}
