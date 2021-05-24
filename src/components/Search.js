@@ -11,13 +11,13 @@ export default function Search(props) {
 
   const search = async () => {
     const data = await fetchWeather(query);
-    if (data.cod == "200") {
+    if (data.cod === "200") {
       setWeather(data);
       setQuery("");
 
       props.history.push({
         pathname: "/weather",
-        state: data,
+        state: weather,
       });
     } else {
       console.log("Error Found");
