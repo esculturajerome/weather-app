@@ -17,7 +17,7 @@ export default function Search(props) {
 
       props.history.push({
         pathname: "/weather",
-        state: weather,
+        state: data,
       });
     } else {
       console.log("Error Found");
